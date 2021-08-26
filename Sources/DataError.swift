@@ -1,6 +1,5 @@
 //
 //  DataError.swift
-//  Osvas-iOS
 //
 //  Created by Ilham Hadi Prabawa on 5/6/20.
 //  Copyright © 2020 Osvas. All rights reserved.
@@ -8,7 +7,7 @@
 
 import Foundation
 
-public enum NError: Equatable {
+public enum NError: Error, Equatable {
     case unauthorized
     case internalServerError
     case responseError(message: String)
@@ -42,7 +41,7 @@ public extension NError {
     }
 }
 
-public class ErrorResponse {
+/*public class ErrorResponse {
     var errorResult: NError?
     
     public init(data: Data) {
@@ -91,4 +90,4 @@ public class DataError: Error {
         self.errorModel = nil
     }
     
-}
+}*/
