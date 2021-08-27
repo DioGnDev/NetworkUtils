@@ -15,7 +15,7 @@ public enum Method: String{
 public class Networking {
   
   //singleton
-  static let sharedInstance = Networking()
+  public static let sharedInstance = Networking()
   
   //URLSession
   private let defaultSession = URLSession(configuration: .default)
